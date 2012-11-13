@@ -5,3 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+puts 'CREATING ROLES'
+Role.create([
+  { :name => 'admin' }, 
+  { :name => 'user' }, 
+  { :name => 'student' },
+  { :name => 'parent' }
+], :without_protection => true)
+puts 'SETTING UP DEFAULT USER LOGIN'
+user = User.create! :name => 'Andrew Lippert', :email => 'andrew@ednovate.org', :password => 'please', :password_confirmation => 'please'
+puts 'New user created: ' << user.name
+user2 = User.create! :name => 'David Dwyer', :email => 'ddwyer@uschybridhigh.org', :password => 'please', :password_confirmation => 'please'
+puts 'New user created: ' << user2.name
+user.add_role :admin
+user2.add_role :admin

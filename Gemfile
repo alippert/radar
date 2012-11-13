@@ -18,9 +18,43 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+  gem 'jquery-ui-rails'
+  gem 'bootstrap-sass', '>= 2.1.0.0'
+end
+
+group :development do
+	gem 'rspec-rails', '>= 2.11.0'
+	gem 'factory_girl_rails'
+	gem 'quiet_assets'
+end
+
+group :test do
+	gem 'rspec-rails', '>= 2.11.0'
+	gem 'email_spec', '>= 1.2.1'
+	gem 'cucumber-rails', '>= 1.3.0', :require => false
+	gem 'database_cleaner', '>= 0.8.0'
+	gem 'launchy', '>= 2.1.2'
+	gem 'capybara', '>= 1.1.2'
+	gem 'factory_girl_rails'
 end
 
 gem 'jquery-rails'
+
+gem 'devise', '>= 2.1.2'
+gem 'cancan', '>= 1.6.8'
+gem 'rolify', '>= 3.2.0'
+
+gem 'will_paginate'
+gem 'inherited_resources'
+gem 'has_scope'
+gem 'simple_form'
+gem 'passenger'
+
+gem 'gmaps4rails'
+
+gem 'hominid'
+gem 'google_visualr', '>= 2.1.2'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -36,3 +70,4 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
