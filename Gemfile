@@ -54,7 +54,7 @@ gem 'passenger'
 gem 'gmaps4rails'
 
 gem 'hominid'
-gem 'google_visualr', '>= 2.1.2'
+gem 'd3_rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
