@@ -10,7 +10,8 @@ Role.create([
   { :name => 'admin' }, 
   { :name => 'user' }, 
   { :name => 'student' },
-  { :name => 'parent' }
+  { :name => 'parent' },
+  { :name => 'researcher'}
 ], :without_protection => true)
 puts 'SETTING UP DEFAULT USER LOGIN'
 user = User.create! :name => 'Andrew Lippert', :email => 'andrew@ednovate.org', :password => 'please', :password_confirmation => 'please'

@@ -51,6 +51,7 @@ class UsersController < ApplicationController
   private
   
   def create_chart
+    # deprecated - moving to d3 for graphing functions
     users_by_day = User.group("DATE(created_at)").count
     data_table = GoogleVisualr::DataTable.new
     data_table.new_column('date')
