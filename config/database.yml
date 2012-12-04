@@ -54,7 +54,7 @@ production:
   database: radar_production
   pool: 5
   username: radar
-  password:
+  password: radar
 
 cucumber:
   <<: *test
